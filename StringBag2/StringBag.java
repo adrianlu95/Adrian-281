@@ -20,7 +20,7 @@ public class StringBag implements SimpleCollection {
         }
     }
 
-    public boolean add ( Object lonelyString ){
+    public boolean add (Object lonelyString){
         if (lonelyString instanceof String) {
             sack.add((String) lonelyString);
             return true;
@@ -32,7 +32,7 @@ public class StringBag implements SimpleCollection {
         sack = new ArrayList<String>();
     }
 
-    public boolean contains ( Object lonelyString ){
+    public boolean contains (Object lonelyString){
         if (lonelyString instanceof String) {
             return sack.contains((String) lonelyString);
         }
@@ -43,7 +43,7 @@ public class StringBag implements SimpleCollection {
         return sack.isEmpty();
     }
     
-    public boolean remove ( Object lonelyString ){
+    public boolean remove (Object lonelyString){
         if (lonelyString instanceof String) {
             return sack.remove((String) lonelyString);
         }
